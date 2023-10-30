@@ -1,0 +1,85 @@
+@import './base.css';
+
+#login{
+  background: linear-gradient(#136a8a, #267871);
+}
+
+#loginScreen{
+  height: calc(100vh);
+  display: flex;
+}
+
+.v-navigation-drawer{
+  background: linear-gradient( #7b4397, #dc2430) !important;
+
+}
+
+.v-list-item--density-compact {
+  min-height: 54px !important;
+}
+
+/* button start*/
+
+.editIcon:hover{
+  color: #1A237E;
+}
+.deleteIcon:hover{
+  color: #B71C1C;
+}
+
+.primaryBtn{
+  color: #1A237E;
+  border: 2px solid #1A237E !important;
+
+}
+
+.primaryBtn:hover{
+  background-color: #1A237E;
+  color: #fff;
+
+}
+.secoundaryBtn{
+  color: #B71C1C;
+  border: 2px solid #B71C1C !important;
+
+}
+
+.secoundaryBtn:hover{
+  background-color: #B71C1C;
+  color: #fff;
+
+}
+
+ /* button ends */
+.v-main{
+  margin: 2rem 1rem;
+}
+
+/* Table Global css */
+.customize-table {
+  --easy-table-border: 1px solid #445269;
+  --easy-table-row-border: 1px solid #445269;
+
+  --easy-table-header-font-size: 14px;
+  --easy-table-header-height: 50px;
+  --easy-table-header-font-color: #fff;
+  --easy-table-header-background-color: #303F9F;
+
+  --easy-table-header-item-padding: 10px 15px;
+
+  --easy-table-body-even-row-font-color: #fff;
+  --easy-table-body-even-row-background-color: #4c5d7a;
+
+  --easy-table-body-row-height: 50px;
+  --easy-table-body-row-font-size: 14px;
+
+
+  --easy-table-body-item-padding: 10px 15px;
+
+  --easy-table-footer-font-size: 14px;
+  --easy-table-footer-padding: 0px 10px;
+  --easy-table-footer-height: 50px;
+
+ 
+
+}
