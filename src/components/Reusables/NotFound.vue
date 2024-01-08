@@ -3,7 +3,7 @@
             <div class="d-flex flex-column">
                 <h1>Oops ! Page Not Found</h1>
                 <div class="d-flex justify-center">
-                    <v-btn class="mt-6" @click="router.push('/users')">Go Home</v-btn>
+                    <v-btn class="mt-6" @click="router.push('/posts')">Go Home</v-btn>
                 </div>
             </div>
     </div>

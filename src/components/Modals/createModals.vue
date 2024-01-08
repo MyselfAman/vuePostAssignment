@@ -1,22 +1,22 @@
 <template>
     <v-dialog width="500" v-model="dialogBox">
 
-    <v-card title="Create User">
+    <v-card title="Create Post">
       <v-card-text>
         <form @submit.prevent="submit">
                         <v-text-field
-                            v-model="firstname.value.value"
-                            :error-messages="firstname.errorMessage.value"
-                            label="Firstname"
+                            v-model="title.value.value"
+                            :error-messages="title.errorMessage.value"
+                            label="Title"
                             variant="underlined"
-                            placeholder="Please enter firstname"
+                            placeholder="Please enter title"
                         ></v-text-field>
                         <v-text-field
-                            v-model="lastname.value.value"
-                            :error-messages="lastname.errorMessage.value"
-                            label="Lastname"
+                            v-model="body.value.value"
+                            :error-messages="body.errorMessage.value"
+                            label="Body"
                             variant="underlined"
-                            placeholder="Please enter lastname"
+                            placeholder="Please enter body"
                         ></v-text-field>
                  
                        <div class="d-flex flex-row-reverse mt-2">
@@ -56,26 +56,26 @@ const dialogBox = computed(()=> {
 
 const { handleSubmit } = useForm({
   validationSchema: {
-    firstname (value) {
+    title (value) {
       if (value !== '') return true
 
-      return 'Enter your firstname.'
+      return 'Enter your title.'
     },
-    lastname (value) {
+    body (value) {
       if (value !== '') return true
 
-      return 'Enter your lastname.'
+      return 'Enter your body.'
     },
    
   },
 })
 
-const firstname = useField('firstname')
-const lastname = useField('lastname')
+const title = useField('title')
+const body = useField('body')
 
 const submit = handleSubmit(values => {
   emit('create' , values)
-  alert(JSON.stringify(values))
+  alert(JSON.stringify(values));
 })
 
 </script>
